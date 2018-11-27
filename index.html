@@ -73,10 +73,31 @@
         <div class="inner cover">
 <h1 class="cover-heading">What is Consiousness? </h1>
 <p id="demo"></p>
-<button class= "btn btn-default" type='button' onclick='document.getElementById("demo").innerHTML = "Consciousness is everything you experience. It is the tune stuck in your head, the sweetness of chocolate mousse, the throbbing pain of a toothache, the fierce love for your child and the bitter knowledge that eventually all feelings will end."'>Answer
-</button>
-</div>
 
+<!--<button class= "btn btn-lg" type='button' onclick='document.getElementById("demo").innerHTML = "Consciousness is everything you experience. It is the tune stuck in your head, the sweetness of chocolate mousse, the throbbing pain of a toothache, the fierce love for your child and the bitter knowledge that eventually all feelings will end."; increaseFontSizeby30px();'>Answer
+</button>-->
+<script>
+function increaseFontSizeby30px() {
+document.getElementById("myDIV").style.fontSize = "30px";
+}
+</script>
+<button class= "btn btn-lg" type='button'
+onclick='myFunction();increaseFontSizeby30px(); '>Answer
+</button>
+<div id="myDIV">Consciousness is everything you experience. It is the tune stuck in your head, the sweetness of chocolate mousse, the throbbing pain of a toothache, the fierce love for your child and the bitter knowledge that eventually all feelings will end.</div>
+<script>
+function myFunction() {
+var x = document.getElementById("myDIV");
+if (x.style.display === "block"){
+x.style.display = "none";
+}
+else {
+x.style.display = "block";
+}
+}
+</script>
+
+<div>
         <div class="mastfoot">
           <div class="inner">
             <p>Website for <a href="https://www.codefirstgirls.org.uk/free-community-courses.html">CF:G Uni Beginners Course</a>
